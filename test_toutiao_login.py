@@ -32,13 +32,13 @@ time.sleep(1)
 driver.find_element(By.ID,'io.manong.developerdaily:id/btn_email').click()
 # driver.find_element(By.XPATH,'//*[@text="注册"]').click()
 # time.sleep(3)
-driver.find_element(By.ID,'io.manong.developerdaily:id/edt_email').send_keys('zhh123@126.com')
-time.sleep(1)
-driver.find_element(By.ID,'io.manong.developerdaily:id/edt_password').send_keys('123123')
+#driver.find_element(By.ID,'io.manong.developerdaily:id/edt_email').send_keys('zhh123@126.com')
+#time.sleep(1)
+#driver.find_element(By.ID,'io.manong.developerdaily:id/edt_password').send_keys('123123')
 # driver.find_element(By.XPATH,'//android.widget.EditText[@resource-id="io.manong.developerdaily:id/edt_email"]').send_keys('zhh123@126.com')
 # driver.find_element(By.XPATH,'//android.widget.EditText[@resource-id="io.manong.developerdaily:id/edt_password"]').send_keys('123123')
 
-driver.find_element(By.XPATH,'//*[@text="登录"]').click()
+#driver.find_element(By.XPATH,'//*[@text="登录"]').click()
 
 # driver = webdriver.Remote(url,options=UiAutomator2Options().load_capabilities(cap1))
 
