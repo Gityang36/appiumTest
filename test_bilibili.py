@@ -25,4 +25,4 @@ options.load_capabilities({
 driver = webdriver.Remote(url,options=options)
 driver.implicitly_wait(10)
 driver.find_element(By.XPATH,'//*[@text="动画"]').click()
-driver.find_element(By.XPATH,'//*[@text="国创"]').click()
+#driver.find_element(By.XPATH,'//*[@text="国创"]').click()
