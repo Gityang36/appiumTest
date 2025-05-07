@@ -10,19 +10,22 @@ options.load_capabilities({
 	"platformName": "Android",
 	"appium:deviceName": "HonorV8",
 	"appium:platformVersion": "8",
-	'appPackage': 'tv.danmaku.bili',
-	'appActivity': '.MainActivityV2',
+	'appPackage': 'com.android.chrome',
+	'appActivity': 'com.google.android.apps.chrome.Main',
 	"appium:automationName": "UiAutomator2",
 	"appium:ensureWebviewsHavePages": True,
 	"appium:nativeWebScreenshot": True,
-	"appium:newCommandTimeout": 600,
+	"appium:newCommandTimeout": 10,
     "adbExecTimeout": 6000,
 	"appium:connectHardwareKeyboard": True,
-	"noReset": True,
-	"dontStopAppOnReset": True
+	"noReset": True
+	# "dontStopAppOnReset": True
 })
 
 driver = webdriver.Remote(url,options=options)
-driver.implicitly_wait(10)
-driver.find_element(By.XPATH,'//*[@text="动画"]').click()
-# driver.find_element(By.XPATH,'//*[@text="国创"]').click()
+driver.implicitly_wait(6)
+driver.find_element(By.XPATH,'//android.widget.ImageButton[@content-desc="自定义及控制 Google Chrome"]').click()
+driver.find_element(By.XPATH,'//*[@text="书签"]').click()
+# driver.find_element(By.XPATH,'//*[@text="移动设备书签"]').click()
+time.sleep(3)
+driver.quit()
