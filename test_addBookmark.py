@@ -28,4 +28,4 @@ driver.find_element(By.XPATH,'//android.widget.ImageButton[@content-desc="自定
 driver.find_element(By.XPATH,'//*[@text="书签"]').click()
 # driver.find_element(By.XPATH,'//*[@text="移动设备书签"]').click()
 time.sleep(3)
-driver.quit()
+driver.terminate_app("com.android.chrome")
