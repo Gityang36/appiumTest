@@ -16,6 +16,7 @@ def test_chrome_add_bookmark():
 		"appium:automationName": "UiAutomator2",
 		"appium:ensureWebviewsHavePages": True,
 		"appium:nativeWebScreenshot": True,
+		"forceAppLaunch":True,
 		"appium:newCommandTimeout": 10,
 		"adbExecTimeout": 6000,
 		"appium:connectHardwareKeyboard": True,
