@@ -32,7 +32,7 @@ def test_toutiao():
 	time.sleep(1)
 	driver.find_element(By.ID,'io.manong.developerdaily:id/btn_email').click()
 	# driver.find_element(By.XPATH,'//*[@text="注册"]').click()
-	time.sleep(1)
+	time.sleep(3)
 	driver.find_element(By.ID,'io.manong.developerdaily:id/edt_email').send_keys('zhh123@126.com')
 	time.sleep(3)
 	driver.terminate_app("io.manong.developerdaily")
